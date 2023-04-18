@@ -19,7 +19,8 @@ print(simple)
 for i in range(0,len(simple)):
     print("index:",i,"value:",simple[i],"\n")
 
-#     PS C:\Users\subrah> python3 Problem_of_day.py
+#     PS C:\Users\subrah> python3 Problem_of_day.py ## :---Understanding which one speed how  list and Dictioanry will impact in the(size and memory locations)
+
 # helool inside simple34
 # hello sir
 # hello world
