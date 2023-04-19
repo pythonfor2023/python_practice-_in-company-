@@ -5,7 +5,7 @@ import time
 
 basic_salary=890000
 class Employe_koch:
-    def __init__(self,name,age,gender,area,percentage):
+    def __init__(self,name,age,gender,area,percentage):# constructor with parameter
         self.name=name
         self.age=age
         self.gender=gender
@@ -22,14 +22,14 @@ class Employe_koch:
             self.employee_id="EMPD"+end_char
 
     def genarate_shift(self): 
-        self.generate_assign_id()
+        self.generate_assign_id() #functions call
         if self.employee_id.startswith("EMPN")=="EMPN": # starts with function
              self.assign="Night"
         else:
             self.assign ="DAY"
 
     def  generate_salary(self):
-        self.genarate_shift()
+        self.genarate_shift()# functions call
         if self.assign=="Night":
             self.increment=basic_salary+4000
         else:
