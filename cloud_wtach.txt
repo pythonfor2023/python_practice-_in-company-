@@ -1,0 +1,5 @@
+
+whats is amezon clodwatch?
+collect,moniter,vissualize,act,analyze 
+Creating alarms in Amazon: one of the work or senerio in can handled using the boto3
+

@@ -2,7 +2,8 @@
 import random 
 import string
 import time
-
+import json
+import csv
 basic_salary=890000
 class Employe_koch:
     def __init__(self,name,age,gender,area,percentage):
@@ -48,6 +49,13 @@ class Employe_koch:
         time.sleep(5)
         print("Waite......")
         self.generate_salary()
+        print("printing the data of the emloyee in the json file:")
+        file=open("mysample_data","w")
+        file=csv.writer(file)
+        file.writerow([self.name,self.age,self.age,self.gender,self.area,self.percentage])
+                
+        print(json.dumps({"name":self.name,"age":self.age,"gender":self.gender}))
+        simple(data)
         return 
 while(True):
     age=int(input("Plase enter the age:"))
@@ -57,6 +65,22 @@ while(True):
     percentage=input("please enter the percentage:")
     obj=Employe_koch(name=name,age=age,gender=gender,area=area,percentage=percentage)
     obj.display()
+
+
+
+
+
+
+
+
+
+
+
+def simple(data):
+    return data  
+
+
+
 
 
             

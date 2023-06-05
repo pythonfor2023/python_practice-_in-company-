@@ -1,0 +1,4 @@
+the Red_shift is the one of the aws  which is used  for handling the aws
+the red_shift is interpreter that conatins the some of command lines and command for the command line 
+Amazon Redshift clusters
+Note that Amazon Redshift is asynchronous

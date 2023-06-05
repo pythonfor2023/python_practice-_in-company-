@@ -14,10 +14,5 @@
 
 #display everying
 
-#Extraa:--------------------------------------------------
-#strore the genderated data into the database, like mongo, relational database etc.
-# email alert: for night shift starts and end of night and day
-
-# developing extra the devlopement(in main code) 
-
-# last assignment will creating  code that will track any decice on the planet
+#Extraa
+#strore the genderated data into the database

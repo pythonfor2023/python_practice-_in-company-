@@ -1,0 +1,48 @@
+ AWS SDK for Python (Boto3) to create, configure, and manage AWS services, such as Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Simple Storage Service (Amazon S3).
+ sdk: software development tool kit
+ Boto3 is AWS SDK for handling the service in the like create,configure,manage
+ Elastic Compute Cloud (Amazon EC2) 
+Storage Service (Amazon S3)
+The SDK provides an object-oriented API as well as low-level access to AWS services.
+
+Installations
+pip install boto3
+
+# Install Boto3 version 1.0 specifically
+pip install boto3==1.0.0
+
+# Make sure Boto3 is no older than version 1.15.0
+pip install boto3>=1.15.0
+
+# Avoid versions of Boto3 newer than version 1.15.3
+pip install boto3<=1.15.3
+
+Using the AWS Common Runtime (CRT)
+modular package help the AWS sdk extra for better Performance and minimal footprint 
+Using the CRT, SDKs can share the same base code when possible
+improving consistency and throughput optimizations across AWS SDKs.
+pip install boto3[crt]
+pip uninstall awscrt
+pip install boto3[crt] :- re-enbleing 
+
+Before using Boto3 SDK download the aws create the account
+
+ Creating IAM users. 
+ see Managing access keys 
+  to learn how to create and retrieve the keys used to authenticate the user.
+
+If you have the AWS CLI installed,
+aws configure
+
+[default]
+aws_access_key_id = YOUR_ACCESS_KEY
+aws_secret_access_key = YOUR_SECRET_KEY
+
+[default]
+region=us-east-1
+
+
+import boto3
+
+# Let's use Amazon S3
+s3 = boto3.resource('s3')
